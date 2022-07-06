@@ -7,11 +7,11 @@
 }
 
 #header {
-  width: 65%;
+  width: 1233px; 
   left: 25%;
   margin:auto;
   display: flex;
-  flex-wrap: wrap; 
+  /* flex-wrap: wrap;  */
   flex-direction: row;
   justify-content:center;
   align-items: center;
@@ -70,7 +70,7 @@ a {
   order:3;
   flex: 0.7 ;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content:space-evenly;
   align-items: center;
@@ -328,11 +328,14 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 .bodyDiv {
   height: 100%;
   width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .bodyDiv_con {
   grid-gap: 120px;
-  width: 59%;
+  width: 1133px; 
+  /* width: 59%; */
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -359,7 +362,6 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 
 .title_h {
   font-size: 32px;
-  margin-top: 80px;
 }
 
 .divLift > p.p_ti {
@@ -400,10 +402,12 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 
 .p_ti_star{
   font-size: 14px;
-  margin-top: 80px;
 }
 
 .input_dddw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 3px;
   width: 497px;
   height: 30px;
@@ -414,9 +418,11 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 }
 
 .input_dddw > span {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 5px 0px 5px 0px;
+  height: 30px;
+  padding: 0 10px 0 10px;
   font-size: 14px;
 }
 
@@ -450,6 +456,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   height: 160px;
   overflow-y:auto;
   width: 495px;
+  margin-top: 195px;
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 1px 18px 0 rgba(0,0,0,.12),0 6px 10px 0 rgba(0,0,0,.14);
   border: 1px solid #dedede;
 }
@@ -480,7 +487,8 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 .i_tlEdit {
   margin-left: 1px;
   margin-top: -10px;
-  width: 490px;
+  padding: 5px 10px;
+  width: 480px;
   height: 76px;
 }
 
@@ -512,6 +520,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 }
 
 .custInputInfo {
+  padding: 0px 10px ;
   display: inline;
   width: 50%;
   height: 30px;
@@ -524,7 +533,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   display: block;
   width: 75px;
   height: 30px;
-  margin: -32px 0px 0px 382.5px;
+  margin: -32px 0px 0px 425px;
   border: 1px solid #dedede;
 }
 
@@ -533,15 +542,17 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   display: block;
   width: 75px;
   height: 30px;
-  margin: -33px 0px 0px 282.5px;
-  border: 1px solid rgb(13, 230, 13);
+  margin: -33px 0px 0px 315.5px;
+  border: 1px solid #11d073;
 }
 
 .msBtn:hover {
+  border: 1px solid #11d073;
   cursor: pointer;
 }
 
-.msBtn:hover {
+.mrBtn:hover {
+  border: 1px solid #11d073;
   cursor: pointer;
 }
 
@@ -549,7 +560,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   border: 1px solid #11d073;  
 }
 
-.msBtn:focus-visible {
+.mrBtn:focus-visible {
   border: 1px solid #11d073;  
 }
 
@@ -563,6 +574,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   display: inline;
   width: 495px;
   height: 30px;
+  padding: 0px 10px;
   border-radius: 3px;
   border: 1px solid #dedede;
 }
@@ -585,6 +597,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   display: inline;
   width: 495px;
   height: 30px;
+  padding: 0px 10px;
   border-radius: 3px;
   border: 1px solid #dedede;
 }
@@ -646,7 +659,7 @@ body{
 }
   
 .exland {
-  margin: 135px 0px 0px 0px;
+  /* margin: 135px 0px 0px 0px; */
   border: 1px solid #0b8347;
   border-left: none;
   border-right: none;
@@ -656,7 +669,8 @@ body{
 
 .landMenu {
   margin: auto;
-  width: 65%;
+  /* width: 65%; */
+  width: 1237px;
 }
 
 .menu {
