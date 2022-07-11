@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+#header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.headerDis {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+
+.header_img { 
+  left: 20%;
+  width: 30px;
+  height: 40px;
+  margin-left:  20px;
+  margin-top:  5px;
+  background: url(https://static.cdn-eztravel.com/www/api/eb98605/images/header-sprite.svg) -180px 0 no-repeat;
+}
+
+h1 {
+  margin-left:  20px;
+  margin-top:  3px;
+  height: 40px;
+}
+
+.div_body {
+  margin: auto;
+  height: 100%;
+  width: 800px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div_con {
+  width: 100%;
+  height: 280px;
+  margin: 20px 0;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic_DisCon{
+  /* margin-left: 20%; */
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic_DisConCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+  background: linear-gradient( 50deg,#FAA66A, #D540B8) repeat-x;
+
+}
+
+.pic_DisConCircleWh {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.div_picDesc {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid hotpink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_picDesc_text {
+  width: 80%;
+  height: 80%;
+  /* border: 1px solid purple; */
+}
+
+.div_picDesc_text > p {
+  padding: 0 10px;
+  font-size: 20px;
+  background: #ddd;
+  /* border: 1px solid green; */
+}
+
+.div_con2{
+  margin-top: -20px;
+}
+
+.p_textDesc {
+  /* height: 40px; */
+  margin: 0;
+  padding: 0 10px;
+  background: #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(52, 137, 170);
+  /* border: 1px solid red; */
+}
+
+.div_con3{
+  margin-top: 20px;
+  height: 120px;
+  /* border: 1px solid rgb(185, 69, 104); */
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_ConCircle_s {
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid rgb(185, 69, 104); */
+}
+
+.div_ConCircle_dis {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient( 50deg,#FAA66A, #D540B8) repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_ConCircle_dis_s {
+  margin: auto;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.div_con4 {
+  height: 388px;
+}
+
+.div_con4Icon {
+  border-top: 1px solid #dedede;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
+.div_con4IconPart {
+  border-top: 1px solid #dedede;
+  padding-top: 10px;
+  height: 40px;
+  width: 25%;
+  /* border: 1px solid green; */
+}
+
+.div_con4IconPart:hover {
+  border-top: 1px solid black;
+}
+
+._ab6- {
+  margin-left: 82.5px;
+}
+
+.div_con4Context {
+  margin: 0;
+  padding: 0;
+  height: 335px;
+  /* border: 1px solid red; */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+
+
+ ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+.div_con4ConUL {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.div_con4ConLI > ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  list-style-type: none;
+}
+
+.div_con4ConLI > ul li {
+  width: 24.5%;
+  height: 97.5%;
+  background: linear-gradient( 50deg,#FAA66A, #D540B8) repeat-x;
+}
+
+li {
+  height: 25%;
+}
+
+.div_land {
+  width: 100%;
+  height: 140px;
+  background: rgb(41, 40, 40);
+}
