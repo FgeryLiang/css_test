@@ -3,6 +3,49 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media screen and ( min-width: 800px){
+  .div_body {
+    width: 800px;
+  }
+
+  .div_con4IconPart{
+    width: 25%;
+  }
+  
+  ._ab6- {
+    margin-left: 82.5px;
+  }
+}
+
+@media screen and ( min-width: 522px) and ( max-width: 800px) {
+  .div_body {
+    width: 520px;
+  }
+
+  .div_con4IconPart{
+    width: 20%;
+  }
+  
+  ._ab6- {
+    margin-left: 50px;
+  }
+}
+
+@media screen and ( max-width: 521px) {
+  .div_body {
+    width: 100%;
+  }
+
+  .div_con4IconPart{
+    width: 20%;
+  }
+  
+  ._ab6- {
+    margin-left: 50px;
+  }
+}
+
  
 #header {
   position :fixed;
@@ -40,7 +83,7 @@ h1 {
 .div_body {
   margin: auto;
   height: 100%;
-  width: 800px;
+  /* width: 800px; */
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
@@ -140,6 +183,7 @@ h1 {
 .div_ConCircle_s {
   width: 25%;
   height: 100%;
+  /* border: 1px solid rebeccapurple; */
   /* border: 1px solid rgb(185, 69, 104); */
 }
 
@@ -178,16 +222,13 @@ h1 {
   border-top: 1px solid #dedede;
   padding-top: 10px;
   height: 40px;
-  width: 25%;
+  /* width: 25%; */
+  width: 100%;
   /* border: 1px solid green; */
 }
 
 .div_con4IconPart:hover {
   border-top: 1px solid black;
-}
-
-._ab6- {
-  margin-left: 82.5px;
 }
 
 .div_con4Context {
