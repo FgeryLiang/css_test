@@ -16,6 +16,14 @@ body {
   ._ab6- {
     margin-left: 82.5px;
   }
+
+  .div_con4Context {
+    overflow-y: auto;
+  }
+
+  .div_land {
+    height: 80px;
+  }
 }
 
 @media screen and ( min-width: 522px) and ( max-width: 800px) {
@@ -30,6 +38,14 @@ body {
   ._ab6- {
     margin-left: 50px;
   }
+
+  .div_con4Context {
+    overflow-y: auto;
+  }
+
+  .div_land {
+    height: 80px;
+  }
 }
 
 @media screen and ( max-width: 521px) {
@@ -43,6 +59,11 @@ body {
   
   ._ab6- {
     margin-left: 50px;
+  }
+
+  .div_land {
+    margin-top: 350px;
+    height: 40px;
   }
 }
 
@@ -215,7 +236,7 @@ h1 {
   border-top: 1px solid #dedede;
   display: flex;
   flex-direction: row;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .div_con4IconPart {
@@ -236,7 +257,7 @@ h1 {
   padding: 0;
   height: 335px;
   /* border: 1px solid red; */
-  overflow-y: auto;
+  /* overflow-y: auto; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -278,8 +299,16 @@ li {
 
 .div_land {
   width: 100%;
-  height: 80px;
-  background: rgb(41, 40, 40);
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div_land > p {
+  font-size: 12px;
+  cursor: pointer;
+  color: white;
 }
 
 .div_con4IconPart {
