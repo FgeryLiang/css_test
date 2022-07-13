@@ -4,6 +4,7 @@
 
 
 @media screen and (min-width: 1280px )  {
+
   #header {
     width: 1280px; 
   }
@@ -27,17 +28,23 @@
   .sub_menu{
     display: inline-block;
     position: absolute;
+    width: 100%;
     left: calc( (100% - 1280px)/2 + 249.6px ) ;
   }
 }
 
 @media screen and ( max-width: 1280px) {
+
+  #headerRange {
+    width:1280px;
+  }
+
   #header {
     width: 1280px; 
   }
 
   .subMenuDc {
-    width: 1280px;
+    width: 1281px;
   }
 
   .orderSerices{
@@ -55,13 +62,17 @@
   .sub_menu{
     display: inline-block;
     position: relative;
+    width: 100%;
     left: 19.5%;
   }
 
+  .exland {
+    width: calc( 100% + ( 1280px - 100%) );
+  }
 }
 
 #headerRange {
-  border: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
 }
 
 #header {
@@ -732,7 +743,7 @@ body{
 .landMenu {
   margin: auto;
   /* width: 65%; */
-  width: 1237px;
+  width: 100%;
 }
 
 .menu {
