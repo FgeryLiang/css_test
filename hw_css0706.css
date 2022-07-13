@@ -2,12 +2,69 @@
   outline: none;
 }
 
+
+@media screen and (min-width: 1280px )  {
+  #header {
+    width: 1280px; 
+  }
+
+  .subMenuDc {
+    width:100%;
+  }
+
+  .orderSerices{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .subTrackItem{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .sub_menu{
+    display: inline-block;
+    position: absolute;
+    left: calc( (100% - 1280px)/2 + 249.6px ) ;
+  }
+}
+
+@media screen and ( max-width: 1280px) {
+  #header {
+    width: 1280px; 
+  }
+
+  .subMenuDc {
+    width: 1280px;
+  }
+
+  .orderSerices{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .subTrackItem{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .sub_menu{
+    display: inline-block;
+    position: relative;
+    left: 19.5%;
+  }
+
+}
+
 #headerRange {
   border: 1px solid #dedede;
 }
 
 #header {
-  width: 1233px; 
   left: 25%;
   margin:auto;
   display: flex;
@@ -22,7 +79,7 @@
 
 .header_logo {
   margin: 0;
-  padding: 0 ;
+  padding: 0 10px ;
   width: 173px;
   height: 40px;
   background: url(https://static-test.cdn-eztravel.com/www/api/12882c9/images/eztravel-logo.svg) 0 0 no-repeat;
@@ -107,6 +164,8 @@ a {
 .checkOrder {
   color: #222;
   font-size: 14px;
+  display: inline-block;
+  position: relative;
 }
 
 .logbtn> a.login_a {
@@ -130,7 +189,6 @@ a {
   height: 129px;
   z-index: 5;
   position: absolute;
-  width: 100%;
   left: 0;
   background-color: #f1f7f8;
   box-shadow: 0 2px 4px -1px rgb(0 0 0 / 40%);  
@@ -140,7 +198,6 @@ a {
 .sub_menu {
   margin: 0 auto;
   /* padding: 15px 0; */
-  left: 29.5%;
   top: 20px;
   background-color: #f1f7f8;
   position: absolute;
@@ -214,10 +271,9 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 .subTrackItem {
   background-color: #fff;
   z-index: 10;
-  top: 50px;
-  left: 67.5%;
+  top: 30px;
+  /* left: 67.5%; */
   display: none;
-  position:fixed;
   border-radius: 10px;
   height: 187px;
   width: 130px;
@@ -280,7 +336,7 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 }
 
 .orderSerices>ul {
-  padding: 0;
+  padding: 0px 0 0px 8px;
   margin-top: 10px;
   list-style-type: none;
 }
@@ -288,10 +344,8 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
 .orderSerices{
   z-index: 10;
   background-color: #fff;
-  position: fixed;
   text-align: center;
-  top: 50px;
-  left: 71.5%;
+  top: 30px;
   display: none;
   border-radius: 10px;
   height: 217px;
@@ -543,7 +597,15 @@ ul > div.main_menu_dc li:hover > div.subMenuDc  {
   width: 75px;
   height: 30px;
   margin: -33px 0px 0px 315.5px;
-  border: 1px solid #11d073;
+  border: 1px solid #dedede;
+}
+
+.msBtn > p {
+  margin-top: 3px;
+}
+
+.mrBtn > p {
+  margin-top: 3px;
 }
 
 .msBtn:hover {
