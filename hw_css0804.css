@@ -1,0 +1,1687 @@
+* {
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  -webkit-user-select: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 970px) {
+
+  #adsBar {
+    background: url(https://rf-web-image.s3-ap-northeast-1.amazonaws.com/cms_out/adidas/j_service/draft/output/images/1442/e26a76de-477f-43ac-8eaf-0b3bcd4a571a.gif) 0 0 no-repeat;
+    background-size: 100%;
+  }
+
+  .header {
+    margin-top: 4%;
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+
+  #adsBar {
+    background: url(https://rf-web-image.s3-ap-northeast-1.amazonaws.com/cms_out/adidas/j_service/draft/output/images/1442/d6453764-4500-4a62-94b0-68e1476d7408.gif) 0 0 no-repeat;
+    background-size: 100%;
+  }
+
+  .header {
+    margin-top: 14%;
+  }
+
+  .headerHead {
+    display: none;
+  }
+}
+
+#adsBar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  padding-top: 14%;
+  top: 0;
+  left: 0;
+  z-index: 999999999999;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999999;
+}
+
+.headerHead {
+  height: 32px;
+}
+
+.headBar {
+  margin: auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.headBarRight {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.headBarRight ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.headBarRight li {
+  font-size: 12px;
+  padding: 5px 10px;
+  text-align: -webkit-match-parent;
+}
+
+.headLogin {
+  margin: 2px;
+}
+
+.headLogin>a {
+  z-index: 50;
+  margin: 0;
+  padding: 5px 16px;
+  width: 100%;
+  height: 32px;
+  color: #ddd;
+  position: relative;
+}
+
+.headLogin>a::before {
+  content: '';
+  font: 12px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -5.5px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  background: url(https://static.cdn-eztravel.com/assets/images/common/mem-modal/login.png) 0 0 no-repeat;
+  background-size: 180%;
+  background-position: -2px -120px;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .headerMenuList {
+    width: 950px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .headerMenuList {
+    width: 650px;
+  }
+
+}
+
+@media screen and (min-width: 970px) {
+
+  .headerMainMenu {
+    width: 1200px;
+    justify-content: flex-start;
+  }
+
+  .headerMenuList {
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+
+  .headerMainMenu {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .headerMenuList {
+    display: none;
+  }
+
+}
+
+.headerMainMenu {
+  height: 48px;
+  display: flex;
+  z-index: 150;
+}
+
+.headerMenuList {
+  padding: 0;
+  margin: auto;
+}
+
+.headerMenuList>ul {
+  padding: 0 5px;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.headerMenuDisLine::after {
+  content: '|';
+  margin-top: 12px;
+  margin-left: 5px;
+  width: 1px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.headerMenuList>ul>li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 48px;
+  font-size: 19px;
+}
+
+.mainMenuItem>a {
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: AdihausDIN, PingFangSC-Regular, "Hiragino Sans GB", "微?雅黑", "Microsoft YaHei", sans-serif !important;
+  color: #ddd;
+  font-weight: 700;
+}
+
+.headerMenuList>ul>li>a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+.mainMenuItem:hover>.main {
+  display: block;
+  transition: .5s;
+}
+
+/* ***************************** */
+.main {
+  display: none;
+}
+
+.subHeaderMenu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.subHeaderMenuDis {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.subHeaderMenu_ul {
+  left: 0;
+  height: 0x;
+  margin: 25px 0;
+  width: 100%;
+  position: relative;
+}
+
+.herderMenuTitle a,
+.herderMenuTitle {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.herderMenuItem>a,
+.subHeaderfooter a,
+.subHeaderfooterBrand a,
+.subHeaderfooterOUTLET a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 0;
+  font-family: "adiHausregular", Arial, Helvetica, Verdana, "Microsoft JhengHei", sans-serif;
+}
+
+.herderMenuItem {
+  padding: 1px 0;
+}
+
+.herderMenuItem>a:hover,
+.herderMenuTitle a:hover,
+.subHeaderfooter a:hover,
+.subHeaderfooterBrand a:hover,
+.subHeaderfooterOUTLET a:hover {
+  color: rgb(94, 164, 221);
+}
+
+.subHeaderfooter {
+  position: absolute;
+}
+
+.subHeaderMenuDis_sport {
+  width: 65%;
+  justify-content: flex-start;
+}
+
+.subHeaderMenu_ulsport {
+  width: 16%;
+  height: 350px;
+}
+
+.subHeaderMenuDis_brand {
+  width: 65%;
+  justify-content: flex-start;
+}
+
+.subHeaderMenu_ulbrand {
+  width: 16%;
+  height: auto;
+}
+
+.herderMenuTitle>img {
+  margin: -8px 0;
+}
+
+.subHeaderMenuDis_Aman,
+.subHeaderMenuDis_woman,
+.subHeaderMenuDis_child,
+.subHeaderMenuDis_OUTLET,
+.subHeaderMenuDis_NewGirut {
+  width: 65%;
+  justify-content: flex-start;
+}
+
+.subHeaderMenu_ulAman {
+  width: 16%;
+  height: 310px;
+}
+
+.subHeaderMenu_ulwoman {
+  width: 16%;
+  height: 340px;
+}
+
+.subHeaderMenu_ulchild {
+  width: 16%;
+  height: 180px;
+}
+
+.subHeaderMenu_ulOUTLET {
+  width: 16%;
+  height: 310px;
+}
+
+.subHeaderfooterOUTLET {
+  position: absolute;
+  top: 280px;
+}
+
+.subHeaderMenu_ulNewGirut {
+  width: 16%;
+  height: 310px;
+}
+
+.subHeaderfooter_Aman {
+  top: 275px;
+}
+
+.subHeaderfooter_woman {
+  top: 305px;
+}
+
+.subHeaderfooter_child {
+  top: 140px;
+}
+
+.subHeaderfooter_Aman>hr,
+.subHeaderfooter_woman>hr,
+.subHeaderfooter_child>hr,
+.subHeaderfooterOUTLET>hr {
+  width: 170px;
+}
+
+
+/* ***************************** */
+
+.headerIcon {
+  background: url("https://www.adidas.com.tw/rbkmall/images/logo/icon-adidas-logo-white.svg") 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.headerMenuIconDis {
+  position: absolute;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  top: 48px;
+  border-top: 1px solid #6c6969;
+  display: none;
+}
+
+.headerMenuIcon_ul {
+  padding: 0;
+  position: relative;
+}
+
+.headerMenuIconItem a {
+  line-height: 50px;
+  font-family: AdihausDIN, PingFangSC-Regular, "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.headerMenuIconItemMember a {
+  line-height: 55px;
+  font-family: AdihausDIN, PingFangSC-Regular, "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", sans-serif;
+  /* font-weight: 700; */
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.headerMenuIconItem > a::after{
+  content: '+';
+  position: absolute;
+  height: auto;
+  right:32px;
+  color: #ddd;
+}
+
+.headerMenuIconItemMember {
+  background: #1e1e1e;
+}
+
+.headerMenuIconItem>ul {
+  display: none;
+}
+
+/* -webkit-animation:click 1s infinite linear;    
+  @-webkit-keyframes "click" {
+
+  } */
+
+.headerMenuIcon_ul:hover>.headerMenuIconItem ul {
+  display: block;
+}
+
+
+@media screen and (min-width: 970px) {
+  .headerIcon {
+    width: 100px;
+    margin-left: -14px;
+    margin-top: -29px;
+    background-size: 101%;
+    background-position: 1px 5px;
+  }
+}
+
+
+@media screen and (max-width: 970px) {
+
+  .headerMenuIcon {
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url("https://www.adidas.com.tw/rbkmall/images/adidas/icon.png") 0 0 no-repeat;
+    background-size: 3123%;
+    background-position: -1251px -4px;
+  }
+
+  .headerIcon {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    background-size: 100%;
+    background-position: 6px 6px;
+  }
+
+  .headerMenuIcon:hover .headerMenuIconDis {
+      display: block;
+    }
+
+}
+
+
+@media screen and (min-width: 970px) {
+
+  .headerSearchIcon {
+    display: flex;
+  }
+
+  .headerSearchIcon970 {
+    display: none;
+  }
+
+  .shoppingCart {
+    width: 48px;
+    height: 32px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    background-image: url(https://images.adidas.com.tw/draft/resources/images/adidas/adidas_desktop_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -1440px -567px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  .headerSearchIcon {
+    display: none;
+  }
+
+  .headerSearchIcon970>input {
+    width: 100vw;
+  }
+
+  .divSearchIcon970 {
+    width: 48px;
+    height: 32px;
+    top: 0;
+    right: 48px;
+    position: absolute;
+    background: url("https://media.istockphoto.com/vectors/illustration-of-the-search-button-vector-id1267251969?s=612x612") 0 0 no-repeat;
+    background-position: -223px -156px;
+  }
+
+
+  .shoppingCart {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 48px;
+    height: 32px;
+    background-image: url(https://images.adidas.com.tw/draft/resources/images/adidas/adidas_desktop_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -1440px -560px;
+  }
+
+
+}
+
+.headerSearchBar {
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  justify-content: flex-start;
+}
+
+.headerSearchIcon {
+  width: 180px;
+  cursor: pointer;
+  border-right: rgba(221, 221, 221, 0.151);
+}
+
+.headerSearchIcon img {
+  padding: 8px;
+  width: 15px;
+  height: auto;
+  border: none;
+  background-color: white;
+}
+
+.headerSearchIcon>input {
+  width: 130px;
+  line-height: 20px;
+  padding: 6px 8px;
+  margin-left: -5px;
+  border: none;
+  resize: none;
+}
+
+.divSearchColumn970 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.divSearchColumn970:hover>img {
+  display: block;
+  margin-top: 47px;
+  margin-left: -517px;
+  transition: 1.5s;
+}
+
+.divSearchColumn970:hover>input {
+  display: block;
+  top: 37px;
+  transition: 1.5s;
+}
+
+.divSearchColumn970>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  z-index: 9;
+  margin-top: 0;
+  margin-left: -517px;
+  z-index: -999998;
+  display: none;
+}
+
+.divSearchColumn970>input {
+  position: absolute;
+  top: -10px;
+  left: -528px;
+  right: 0;
+  height: 40px;
+  width: 500px;
+  z-index: -999999;
+  padding: 0 58px;
+  border: 4px solid black;
+  display: none;
+}
+
+@media screen and (min-width: 970px) {
+
+  #bodyArea {
+    margin-top: calc(4% + 80px);
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+
+  #bodyArea {
+    margin-top: calc(14% + 48px);
+  }
+
+}
+
+#bodyArea {
+  z-index: 9999;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+}
+
+.headerText {
+  width: 100%;
+  height: 32px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.HT_disCon {
+  width: 1000px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+}
+
+@media screen and (min-width: 800px) {
+  .HT_disCon p {
+    width: 800px;
+  }
+}
+
+@media screen and ( max-width: 800px) {
+  .HT_disCon p {
+    width: 100vw;
+  }
+}
+
+.HT_disCon p {
+  color: #ddd;
+  font-size: 14px;
+  padding: 0;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.HT_disIcon {
+  background-image: url(https://www.adidas.com.tw/rbkmall/images/adidas/icon.png);
+  background-position: -140px -16px;
+  background-size: auto;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  right: 0;
+  top: 5px;
+}
+
+.adsDisQueBox {
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+.adsSpace {
+  margin-top: 25px;
+}
+
+.adsPic {
+  padding-bottom: 25px;
+}
+
+.adsPic img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 970px) {
+  .disCon_ads1 {
+    width: 250px;
+    left: calc(50% - 60px);
+  }
+
+  .disCon_ads2 {
+    width: 250px;
+    left: calc(15.5% - 60px);
+  }
+
+  .QueBoxN {
+    display: block;
+  }
+
+  .QueBoxM {
+    display: none;
+  }
+
+  .disCon_ads1 {
+    margin-top: 26%;
+  }
+
+  .disCon_ads2 {
+    margin-top: -12%;
+  }
+
+
+}
+
+@media screen and (max-width: 970px) {
+
+  .disCon_ads1 {
+    width: 100%;
+    left: 5%;
+  }
+
+  .disCon_ads2 {
+    width: 100%;
+    left: 5%;
+  }
+
+  .QueBoxN {
+    display: none;
+  }
+
+  .QueBoxM {
+    display: block;
+  }
+
+  .disCon_ads1 {
+    margin-top: 84%;
+  }
+
+  .disCon_ads2 {
+    margin-top: -15%;
+  }
+}
+
+.disCon_ads1 {
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+
+.disCon_ads2 {
+  position: absolute;
+  height: auto;
+}
+
+@media screen and (min-width: 970px) {
+  .adsDisCon a {
+    opacity: 0.5;
+  }
+
+  .adsDisCon a:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+
+  .adsDisCon a:hover>span::after {
+    transition: .3s;
+    background-position: -76px -10px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  .adsDisCon a {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.adsDisCon a {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.adsHer2 {
+  margin-top: 5px;
+}
+
+.adsHer4 {
+  margin-top: 5px;
+}
+
+.adsDisCon a>span {
+  line-height: 40px;
+  font-size: 19px;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .adsDisCon a>span {
+    line-height: 30px;
+  }
+}
+
+.adsDisCon a>span::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  background: url(https://www.adidas.com.tw/rbkmall/images/adidas/icon.png) 0 0 no-repeat;
+  background-size: 4500%;
+  background-position: -78px -10px;
+}
+
+#hotProd {
+  height: 25px;
+}
+
+.hotProdTextMenu {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hotProdTextMenu>div {
+  font-style: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotProdTextMenu li {
+  padding: 2px 3px;
+}
+
+.hotProdTextMenu span {
+  color: inherit !important;
+  padding: 5px 3px;
+  font-weight: 700;
+}
+
+.hotProdFirstText {
+  color: inherit !important;
+  padding: 0 3px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .hotProdSpe {
+    margin-right: 10px;
+  }
+
+  .hotProdNor {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .hotProdNor {
+    margin: 5px 0;
+  }
+
+}
+
+.hotProdSpe {
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: rgb(179, 6, 2);
+}
+
+.hotProdNor {
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: rgb(2, 95, 142);
+}
+
+
+.hotProdTextMenu a {
+  padding: 3px 18px 3px 18px;
+}
+
+#subProdPic {
+  margin-top: 46px;
+}
+
+@media screen and (min-width: 1040px) {
+
+  .subProdM {
+    display: none;
+  }
+
+  .subProdN {
+    display: block;
+  }
+
+  .subProd_UL li {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1040px) {
+
+  .subProd_UL {
+    flex-direction: column;
+  }
+
+  .subProd_UL li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .subProdM {
+    display: block;
+  }
+
+  .subProdN {
+    display: none;
+  }
+
+  .subProd_UL li {
+    width: calc(100% - 30px);
+  }
+
+  .buyBtnArea {
+    display: none;
+  }
+
+}
+
+.subProd_UL {
+  margin: 0;
+  padding: 0;
+  margin: 24px 24px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12.5px;
+}
+
+.subProd_UL li {
+  margin-top: 0;
+  border: none;
+}
+
+.subProd_UL a img {
+  padding: 4%;
+  width: 100%;
+  border: 0;
+  padding: 12.5px;
+}
+
+
+.buyBtnArea {
+  position: absolute;
+  width: 135px;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  height: auto;
+  line-height: 43px;
+  font-size: 19px;
+  opacity: 0.5;
+  margin-top: -78px;
+}
+
+.buyBtnArea span {
+  margin-left: -10px;
+}
+
+.buyBtnArea span::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  background: url(https://www.adidas.com.tw/rbkmall/images/adidas/icon.png) 0 0 no-repeat;
+  background-size: 4500%;
+  background-position: -78px -10px;
+}
+
+#subProdLoPic img {
+  width: 100%;
+}
+
+.buyBtnArea:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.buyBtnArea:hover span::after {
+  transition: .3s;
+  background-position: -76px -10px;
+}
+
+.buy_btnType1 {
+  left: 22.9%;
+}
+
+.buy_btnType2 {
+  left: 71.3%;
+}
+
+@media screen and (min-width: 1040px) {
+  .newProdBtn {
+    width: 135px;
+    margin: auto;
+    left: 78.5%;
+  }
+
+  .newProdBtn:hover {
+    opacity: 1;
+    transition: .3s;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .newProdBtn {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.newProdBtn {
+  position: absolute;
+  background-color: #000;
+  text-align: center;
+  height: auto;
+  line-height: 43px;
+  font-size: 19px;
+  opacity: 0.8;
+  margin-top: -78px;
+}
+
+.disNewProdBtn {
+  margin-left: -10px;
+}
+
+.newProdBtn span {
+  color: #fff;
+}
+
+.newProdBtn span::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  background: url(https://www.adidas.com.tw/rbkmall/images/adidas/icon.png) 0 0 no-repeat;
+  background-size: 4500%;
+  background-position: -103px -10px;
+}
+
+.newProdBtn:hover span::after {
+  transition: .3s;
+  background-position: -101px -10px;
+}
+
+@media screen and (min-width: 1240px) {
+
+  .shortProdDisN {
+    display: block;
+  }
+
+  .shortProdDisM {
+    display: none;
+  }
+
+  .shortProd_UI img {
+    height: auto;
+    width: 90%;
+  }
+
+  .shortProd_UI span {
+    position: relative;
+    bottom: 22px;
+    width: 92%;
+  }
+
+  .shortProd_UI img:hover {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 6px 10px 0 rgba(0, 0, 0, .14);
+    transition: .3s;
+  }
+}
+
+@media screen and (max-width: 1240px) and (min-width: 700px) {
+
+  .shortProdDisN {
+    display: block;
+  }
+
+  .shortProdDisM {
+    display: none;
+  }
+
+  .shortProd_UI img {
+    width: 100%;
+  }
+
+  .shortProd_UI a {
+    width: 87%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .shortProd_UI span {
+    position: absolute;
+    width: 41%;
+    margin-top: 17.5%;
+  }
+
+  .shortProd_UI li {
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .shortProd_UI {
+    flex-wrap: wrap;
+  }
+
+  .shortProdNor {
+    margin-left: 4%;
+  }
+
+  .shortProdM {
+    margin-left: 52%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .shortProd_UI span {
+    position: absolute;
+    width: 41%;
+    margin-top: 13.5%;
+  }
+
+  .shortProdDisN {
+    display: none;
+  }
+
+  .shortProdDisM {
+    display: block;
+  }
+
+  .shortProd_UI a {
+    width: 87%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .shortProd_UI {
+    flex-direction: column;
+  }
+
+  .shortProd_UI li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .shortProd_UI img {
+    width: 100%;
+    background-position: 0 0;
+  }
+}
+
+#shortProd {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.shortProd_UI {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shortProd_UI span {
+  display: block;
+  padding: 0;
+  left: 0;
+  text-align: center;
+  color: #000;
+  font-size: 13px;
+  font-family: AdihausDIN, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  z-index: 99999999999;
+}
+
+.subProdALLOthers {
+  padding: 0;
+  margin: 0 30px;
+}
+
+.subProdOther_titleBar {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 20px 0;
+  font-family: "adiNeuePro", Arial, Helvetica, Verdana, "Microsoft JhengHei", sans-serif;
+  text-align: center;
+}
+
+@media screen and (min-width: 970px) {
+  .subProdOtherContent>div {
+    width: 960px;
+  }
+
+  .subProdOtherContent ul {
+    justify-content: space-between;
+  }
+
+  .subProdOtherContent>div {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .subProdOtherContent>div {
+    width: 90%;
+  }
+
+  .subProdOtherContent ul {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .subProdOtherContent ul li {
+    padding: 8px 1%;
+  }
+
+  .noDis {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 770px) {
+
+  .noDis {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .noDis {
+    display: block;
+  }
+
+}
+
+.subProdOtherContent ul {
+  display: flex;
+  position: relative;
+}
+
+.subProdOtherContent img {
+  height: 200px;
+}
+
+.norSpan {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  font-style: inherit;
+  margin: 10px 0;
+}
+
+.subProdOtherContent a>div,
+.subProdOtherContent li>div {
+  height: 40px;
+}
+
+.linethr {
+  font-size: 12px;
+  color: #bababa;
+  text-decoration: line-through;
+}
+
+.spanChn {
+  color: #000;
+  font-size: 14px;
+  line-height: normal;
+  font-style: inherit;
+  margin: 10px 0;
+}
+
+.spnDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.overSalesdTitle {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 20px 0;
+  font-family: "adiNeuePro", Arial, Helvetica, Verdana, "Microsoft JhengHei", sans-serif;
+  text-align: center;
+}
+
+.pagingElement {
+  display: flex;
+  justify-content: center;
+}
+
+.pagingElement>div {
+  display: inline;
+  margin: auto;
+}
+
+.pagingElement button {
+  border: none;
+}
+
+.pagingElement>div button {
+  border: 0;
+  line-height: 0px;
+  font-size: 0px;
+  width: 20px;
+  height: 4px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.btn_PEL1 {
+  background: #000;
+}
+
+.btn_PEL2 {
+  background: #C8CBCC;
+}
+
+.btn_PEL2:hover {
+  background: #6849f1;
+}
+
+.mailUs {
+  height: 90px;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.mailUs_dis1 {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 970px) {
+  .mailUs_dis2 {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .mailUs_dis2 {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.mailUs_dis2 {
+  height: auto;
+}
+
+
+
+.mailUs a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.mailUs a::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: url(https://www.adidas.com.tw/rbkmall/images/adidas/icon.png) 0 0 no-repeat;
+  background-size: 4500%;
+  background-position: -104px -92px;
+}
+
+.mailUs a:hover {
+  text-decoration: underline;
+}
+
+.footerMenuList {
+  margin: 0;
+  padding: 0;
+}
+
+.footerMenuList>div {
+  display: flex;
+  justify-content: center;
+}
+
+.footerMenuList ul {
+  width: calc(970px / 5);
+}
+
+.footerMenuList li {
+  margin-bottom: 13px;
+  text-align: left;
+}
+
+.footerTitle h5 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.footerMenuList_UL a {
+  font-size: 18px;
+  color: #000;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.footerMenuList_UL a:hover {
+  color: #7f9b85;
+}
+
+@media screen and (min-width: 970px) {
+
+  .footerMenuList {
+    display: block;
+  }
+
+  .footerMenuList_M {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 970px) {
+  .footerMenuList {
+    display: none;
+  }
+
+  .footerMenuList_M {
+    display: block;
+  }
+
+  .footerMenuList_M:hover>.footerMenuItem_M {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footerMenuList_M {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #fff;
+  background-color: #000;
+}
+
+.footerMenuList_ULM {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.footerMenuList_ULM li a {
+  color: #fff;
+}
+
+.footerTitleM {
+  width: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.footerTitleM h5 {
+  color: #ddd;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.footerTitleM:hover {
+  text-decoration: underline;
+
+}
+
+.footerMenuItem_M {
+  padding: 8px 0;
+  width: 100%;
+  background-color: #595757;
+  display: none;
+}
+
+@media screen and (min-width: 970px) {
+  .footer {
+    height: 42px;
+  }
+
+  .footerCountry {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer>div {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .footer {
+    margin-top: -16px;
+    height: 80px;
+  }
+
+  .footerCountry {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .footer>div {
+    width: 85%;
+    position: relative;
+  }
+
+  .endDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer ul {
+    margin-left: -49px
+  }
+}
+
+.footer {
+  background-color: #595757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footerCountry,
+.footer ul li a {
+  font-size: 12px;
+  color: #c8cbcc;
+  margin-top: -2px;
+  margin-left: 20px;
+}
+
+.footerCountry {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+}
+
+.footer ul {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 0; */
+}
+
+.footer li {
+  padding: 0 5px;
+}
+
+.footer ul>li a {
+  color: #c8cbcc;
+}
+
+.useTerms::after {
+  margin-left: 5px;
+  content: ' | ';
+  color: #c8cbcc;
+  top: 0;
+  right: -14px;
+}
+
+.footerCountry:hover,
+.footer ul li a :hover {
+  text-decoration: underline;
+}
+
+.endSpan {
+  font-size: 12px;
+  color: #9a9b9b;
+}
+
+
+#to_topIcon {
+  bottom: 50px;
+  right: 20px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  opacity: 0.5;
+  z-index: 9999999999999999999999999999999999999999;
+  cursor: pointer;
+}
+
+
+.to_topIconPic {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url(https://cdn-icons.flaticon.com/png/512/3426/premium/3426636.png?token=exp=1659929981~hmac=cb190a98cde870f4502746ddf69e8524) 0 0 no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+
+.to_topIconPic a {
+  width: 100%;
+  height: 100%;
+}
