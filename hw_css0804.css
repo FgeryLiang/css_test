@@ -661,7 +661,6 @@ ul {
 }
 
 .HT_disCon {
-  width: 1000px;
   height: 32px;
   display: flex;
   justify-content: center;
@@ -669,13 +668,23 @@ ul {
   padding: 0 70px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
+
+  .HT_disCon {
+    width: 1000px;
+  }
+
   .HT_disCon p {
     width: 800px;
   }
 }
 
-@media screen and ( max-width: 800px) {
+@media screen and ( max-width: 1000px) {
+
+  .HT_disCon {
+    width: 80%;
+  }
+
   .HT_disCon p {
     width: 100vw;
   }
