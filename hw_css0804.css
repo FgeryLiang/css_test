@@ -499,6 +499,7 @@ ul {
   }
 
   .shoppingCart {
+    cursor: pointer;
     width: 48px;
     height: 32px;
     border-left: 1px solid rgba(255, 255, 255, 0.25);
@@ -530,6 +531,7 @@ ul {
 
 
   .shoppingCart {
+    cursor: pointer;
     top: 0;
     right: 0;
     position: absolute;
